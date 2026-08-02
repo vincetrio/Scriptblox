@@ -1,1 +1,383 @@
-# triodevelopment.github.io
+!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+    <title>Soluna Script Hub - Free Roblox Scripts & Executor Loader</title>
+    <meta name="description"
+        content="Soluna Script Hub - free, keyless Roblox scripts, game utilities, and a multi-game loader developed by Soluna Development.">
+    <meta name="keywords"
+        content="roblox scripts, roblox script hub, soluna, free roblox scripts, roblox loader, script executor">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://soluna-development.github.io/">
+
+    <meta property="og:title" content="Soluna Script Hub">
+    <meta property="og:description"
+        content="Free, keyless Roblox scripts, utilities, and a multi-game loader developed by Soluna Development.">
+    <meta property="og:image"
+        content="https://raw.githubusercontent.com/Soluna-Development/API/refs/heads/main/assets/static/background-with-logo.png">
+    <meta property="og:image:width" content="1080">
+    <meta property="og:image:height" content="607">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Soluna Script Hub">
+    <meta property="og:url" content="https://soluna-development.github.io/">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Soluna Script Hub">
+    <meta name="twitter:description"
+        content="Free, keyless Roblox scripts, utilities, and a multi-game loader developed by Soluna Development.">
+    <meta name="twitter:image"
+        content="https://raw.githubusercontent.com/Soluna-Development/API/refs/heads/main/assets/static/background-with-logo.png">
+
+    <link rel="icon"
+        href="https://raw.githubusercontent.com/Soluna-Development/API/refs/heads/main/assets/branding/light-on-black.png"
+        type="image/png">
+
+    <link rel="manifest" href="manifest.json">
+
+    <meta name="theme-color" content="transparent">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="transparent">
+    <meta name="apple-mobile-web-app-title" content="Soluna Script Hub">
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <link rel="apple-touch-icon"
+        href="https://raw.githubusercontent.com/Soluna-Development/API/refs/heads/main/assets/branding/light-on-black.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" href="src/styles/main.css">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Soluna Script Hub",
+        "url": "https://soluna-development.github.io/",
+        "description": "Free, keyless Roblox scripts, utilities, and a multi-game loader developed by Soluna Development."
+    }
+    </script>
+
+
+    <script>
+        const params = new URLSearchParams(location.search);
+
+        if (params.has("debug")) {
+            const s = document.createElement("script");
+            s.src = "https://cdn.jsdelivr.net/npm/eruda";
+            s.onload = () => eruda.init();
+            document.head.appendChild(s);
+        }
+    </script>
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="nav-container">
+            <span class="logo">Soluna Development</span>
+            <div class="nav-links">
+                <a href="#scripts">Scripts</a>
+                <a href="#testimonials">Testimonials</a>
+                <a href="#faq">FAQ</a>
+            </div>
+        </div>
+    </nav>
+
+    <svg aria-hidden="true" class="dot-grid" width="100%" height="100%">
+        <defs>
+            <pattern id="dot-pattern" width="20" height="20" patternUnits="userSpaceOnUse"
+                patternContentUnits="userSpaceOnUse" x="0" y="0">
+                <circle cx="1" cy="1" r="1"></circle>
+            </pattern>
+        </defs>
+        <rect width="100%" height="100%" stroke-width="0" fill="url(#dot-pattern)"></rect>
+    </svg>
+
+    <main>
+        <section class="hero">
+            <div class="hero-atmosphere" aria-hidden="true">
+                <video class="hero-atmosphere-video" autoplay loop muted playsinline webkit-playsinline preload="auto">
+                    <source src="https://cdn.openai.com/ctf-cdn/floral_a.mp4" type="video/mp4">
+                </video>
+                <div class="hero-atmosphere-sheen"></div>
+                <canvas id="hero-byte-overlay"></canvas>
+                <div class="hero-atmosphere-vignette"></div>
+            </div>
+            <div class="container hero-container">
+
+                <div class="logo-image">
+                    <img src="https://raw.githubusercontent.com/Soluna-Development/API/refs/heads/main/assets/branding/transparent-on-white.png"
+                        alt="Soluna Development">
+                </div>
+
+                <h1 class="hero-title">Soluna Development</h1>
+
+                <p class="hero-description">Soluna is a passion project tired of wasting time on key systems and low
+                    quality scripts.
+                </p>
+
+                <button class="discord-copy-bar reveal" id="copy-discord-btn" type="button">
+                    <span class="copy-discord-label"
+                        id="copy-discord-label">loadstring(game:HttpGet("https://raw.githubusercontent.com/Soluna-Development/API/refs/heads/main/src/Loader.lua"))()</span>
+                    <span class="discord-copy-actions">
+                        <span class="discord-copy-icon" id="copy-discord-icon">
+                            <svg class="copy-icon" width="20px" height="20px" viewBox="0 -0.5 25 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" stroke="#000000">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M8.94605 4.99995L13.2541 4.99995C14.173 5.00498 15.0524 5.37487 15.6986 6.02825C16.3449 6.68163 16.7051 7.56497 16.7001 8.48395V12.716C16.7051 13.6349 16.3449 14.5183 15.6986 15.1717C15.0524 15.825 14.173 16.1949 13.2541 16.2H8.94605C8.02707 16.1949 7.14773 15.825 6.50148 15.1717C5.85522 14.5183 5.495 13.6349 5.50005 12.716L5.50005 8.48495C5.49473 7.5658 5.85484 6.6822 6.50112 6.0286C7.1474 5.375 8.0269 5.00498 8.94605 4.99995Z"
+                                        stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round"></path>
+                                    <path d="M10.1671 19H14.9371C17.4857 18.9709 19.5284 16.8816 19.5001 14.333V9.666"
+                                        stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round"></path>
+                                </g>
+                            </svg>
+                            <svg class="check-icon" width="20px" height="20px" viewBox="0 -0.5 25 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g>
+                                    <path d="M5.5 12.5L10 17L19.5 7.5" stroke="#ffffff" stroke-width="2.5"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                    </path>
+                                </g>
+                            </svg>
+                        </span>
+                    </span>
+                </button>
+
+                <div class="hero-cta-row reveal">
+                    <button class="hero-cta hero-cta-dark" id="hero-copy-script-btn" type="button">Copy Script</button>
+                    <a class="hero-cta hero-cta-light" href="/discord" target="_blank" rel="noopener noreferrer">Join
+                        Discord</a>
+                </div>
+
+                <div class="partners-inline reveal" id="partners-grid-wrap">
+                    <p class="partners-label">Available from verified script distributors</p>
+                    <div class="partners-grid" id="partners-grid"></div>
+                </div>
+            </div>
+        </section>
+
+        <div class="stats-grid reveal-stagger" id="stats-grid">
+            <div class="stat-item reveal">
+                <span class="stat-value" id="stat-members"></span>
+                <span class="stat-label">Discord Members</span>
+            </div>
+            <div class="stat-item reveal">
+                <span class="stat-value" id="stat-online"></span>
+                <span class="stat-label">Online Now</span>
+            </div>
+            <div class="stat-item reveal">
+                <span class="stat-value" id="stat-scripts"></span>
+                <span class="stat-label">Scripts Available</span>
+            </div>
+        </div>
+
+        <section id="scripts" class="section">
+            <div class="container">
+                <h2 class="section-eyebrow reveal">Our Scripts</h2>
+                <div class="scripts-wrap">
+                    <div class="scripts-grid reveal-stagger" id="scripts-grid"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="executors" class="section executors-section">
+            <div class="container executors-container">
+                <div class="executors-heading reveal">
+                    <h2 class="section-title-lg">Supporting your favorite executors</h2>
+                    <p class="section-subtitle">accessibility done right</p>
+                </div>
+            </div>
+            <div class="executors-marquee-wrap">
+                <div class="executors-marquee-row">
+                    <div class="executors-marquee-track" id="executors-track"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="section features-section">
+            <div class="container features-container">
+                <div class="features-heading reveal">
+                    <h2 class="section-title-lg">Why choose Soluna?</h2>
+                </div>
+
+                <div class="feature-block reveal">
+                    <div class="feature-media">
+                        <img src="https://i.pinimg.com/736x/b4/5c/f2/b45cf2b1da52ab5f2938b4891f10c635.jpg"
+                            alt="One script for every game">
+                    </div>
+                    <div class="feature-copy">
+                        <h2 class="section-title-lg feature-title">One script for every game</h2>
+                        <p class="section-subtitle">
+                            Stop hunting for separate scripts. Soluna's multi-game loader has every game, so you can
+                            jump
+                            straight into your favorite features without digging through menus.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="feature-block feature-block-reverse reveal">
+                    <div class="feature-media">
+                        <img src="https://i.pinimg.com/736x/e2/66/49/e26649c9f3c9a0f360f0ea66c5d2aa71.jpg"
+                            alt="Fast updates">
+                    </div>
+                    <div class="feature-copy">
+                        <h2 class="section-title-lg feature-title">Fast updates</h2>
+                        <p class="section-subtitle">
+                            Roblox games update constantly. Soluna is maintained with frequent fixes,
+                            allowing supported scripts to return online quickly after major game or
+                            platform updates.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="feature-block reveal">
+                    <div class="feature-media">
+                        <img src="https://i.pinimg.com/1200x/0e/ae/bf/0eaebf0c6fe02fea66bc17dd149ae1fe.jpg"
+                            alt="Simple and clean interface">
+                    </div>
+                    <div class="feature-copy">
+                        <h2 class="section-title-lg feature-title">Simple and clean interface</h2>
+                        <p class="section-subtitle">
+                            No clutter, no confusing menus. Browse supported games, launch scripts,
+                            and manage settings from a modern interface designed to get you in-game
+                            with minimal effort.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="feature-block feature-block-reverse reveal">
+                    <div class="feature-media">
+                        <img src="https://i.pinimg.com/736x/4d/17/b0/4d17b03ff108b399d334ce4f27ff4191.jpg"
+                            alt="Massive game library">
+                    </div>
+                    <div class="feature-copy">
+                        <h2 class="section-title-lg feature-title">Massive game library</h2>
+                        <p class="section-subtitle">
+                            Access scripts for hundreds of popular Roblox experiences from one place.
+                            New games and community-requested support are added regularly to keep the
+                            library growing.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="feature-block reveal">
+                    <div class="feature-media">
+                        <img src="https://i.pinimg.com/1200x/d2/23/03/d22303b9558d59ad08ecfa1972735492.jpg"
+                            alt="Optimized performance">
+                    </div>
+                    <div class="feature-copy">
+                        <h2 class="section-title-lg feature-title">Optimized performance</h2>
+                        <p class="section-subtitle">
+                            Soluna is designed to launch quickly and stay lightweight, reducing
+                            unnecessary overhead while keeping navigation and script loading
+                            responsive.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="feature-block feature-block-reverse reveal">
+                    <div class="feature-media">
+                        <img src="https://i.pinimg.com/736x/54/91/64/549164ce2cb59fd623d5509b1f2c4491.jpg"
+                            alt="Always expanding">
+                    </div>
+                    <div class="feature-copy">
+                        <h2 class="section-title-lg feature-title">Always expanding</h2>
+                        <p class="section-subtitle">
+                            New features, quality-of-life improvements, and additional game support
+                            are continuously being developed based on community feedback, making
+                            Soluna better with every release.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="showcases" class="showcases-section">
+            <div class="container showcases-heading reveal">
+                <h2 class="section-title-lg">Community showcases.</h2>
+                <p class="section-subtitle">See what creators are doing with Soluna, straight from YouTube.</p>
+            </div>
+            <div class="showcase-viewport">
+                <div class="showcase-track" id="showcase-track"></div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="section testimonials-section">
+            <div class="container testimonials-container">
+                <div class="testimonials-heading reveal">
+                    <h2 class="section-title-lg">Here's what people say about <span class="bold">Soluna</span></h2>
+                </div>
+                <div class="marquee-wrap marquee-fade-wrap">
+                    <div class="marquee-row marquee-left">
+                        <div class="marquee-track" id="marquee-track-1"></div>
+                    </div>
+                    <div class="marquee-row marquee-right">
+                        <div class="marquee-track" id="marquee-track-2"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="section faq-section">
+            <div class="container">
+                <div class="faq-heading reveal">
+                    <h2 class="section-title-lg">FAQ</h2>
+                    <p class="section-subtitle">Still have questions? <a href="/discord" target="_blank"
+                            rel="noopener noreferrer">Ask in our Discord</a></p>
+                </div>
+                <div class="faq-list reveal-stagger" id="faq-list"></div>
+            </div>
+        </section>
+    </main>
+
+    <section class="cta-banner">
+        <div class="cta-banner-media" aria-hidden="true">
+            <video class="cta-banner-video hero-atmosphere-video" src="https://cdn.openai.com/ctf-cdn/floral_a.mp4"
+                autoplay loop muted playsinline webkit-playsinline preload="auto"></video>
+            <canvas id="cta-byte-overlay"></canvas>
+            <div class="cta-banner-overlay"></div>
+        </div>
+        <div class="container cta-banner-content reveal">
+            <h2 class="cta-banner-title">Try Soluna today</h2>
+            <p class="cta-banner-subtitle">Free, keyless, and ready in one line of code.</p>
+            <button class="hero-cta hero-cta-light" id="cta-copy-script-btn" type="button">Copy Script</button>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Soluna</h4>
+                <p>Using Soluna means you agree to that we're not liable for any bans, losses, or
+                    issues resulting from third-party script usage - use at your own risk.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Join our Discord</h4>
+                <div class="social-links">
+                    <a href="/discord" target="_blank" rel="noopener">
+                        <i class="fab fa-discord"></i> Discord
+                    </a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Our Github</h4>
+                <p><a href="https://github.com/Soluna-Development" target="_blank" rel="noopener">Soluna Development</a>
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2024 Soluna Development. All rights reserved.
+        </div>
+    </footer>
+
+    <script type="module" src="src/scripts/main.js"></script>
+</body>
+
+</html>
